@@ -81,25 +81,14 @@ a {
   max-width: 120em;
   border-bottom: 1px solid #E6E6E6; }
 
-.header .nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between;
-  height: 7em;
-  background-color: #FFF; }
-  .header .nav-brand {
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: 1000;
+  border-bottom: 1.5px solid #F1F1F1; }
+  .header .nav {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -110,54 +99,73 @@ a {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center;
-    white-space: nowrap;
-    text-decoration: none;
-    cursor: pointer; }
-    .header .nav-brand-logo {
-      width: 4em;
-      height: 4em;
-      margin-right: .96em; }
-    .header .nav-brand-title {
-      margin-right: .2em;
-      font-size: 2.83em;
-      font-weight: 700;
-      letter-spacing: -0.99px;
-      color: #162140; }
-    .header .nav-brand-version {
-      margin-top: 0.1666666667em;
-      -webkit-align-self: flex-start;
-      -moz-align-self: flex-start;
-      -ms-flex-item-align: start;
-      align-self: flex-start;
-      font-size: 1.2em;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      color: #23394d;
-      text-transform: uppercase; }
-  .header .nav-buttons {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center; }
-    .header .nav-buttons .button {
-      font-size: 1.4em;
-      height: 3em;
-      padding: 0 1.5714285714em; }
-      .header .nav-buttons .button-primary-outlined {
-        margin-right: 0.9285714286em; }
-      .header .nav-buttons .button-link {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    height: 7em;
+    background-color: #FFF; }
+    .header .nav-brand {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      white-space: nowrap;
+      text-decoration: none;
+      cursor: pointer; }
+      .header .nav-brand-logo {
+        width: 4em;
+        height: 4em;
+        margin-right: .96em; }
+      .header .nav-brand-title {
+        margin-right: .2em;
+        font-size: 2.83em;
+        font-weight: 700;
+        letter-spacing: -0.99px;
+        color: #162140; }
+      .header .nav-brand-version {
+        margin-top: 0.1666666667em;
+        -webkit-align-self: flex-start;
+        -moz-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        color: #23394d;
+        text-transform: uppercase; }
+    .header .nav-buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
+      .header .nav-buttons .button {
         font-size: 1.4em;
-        margin-right: 2em;
-        text-decoration: none; }
-        .header .nav-buttons .button-link:hover {
-          text-decoration: underline; }
-.header .notification {
+        height: 3em;
+        padding: 0 1.5714285714em; }
+        .header .nav-buttons .button-primary-outlined {
+          margin-right: 0.9285714286em; }
+        .header .nav-buttons .button-link {
+          font-size: 1.4em;
+          margin-right: 2em;
+          text-decoration: none; }
+          .header .nav-buttons .button-link:hover {
+            text-decoration: underline; }
+
+.notification {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -176,13 +184,13 @@ a {
   height: 5em;
   position: relative;
   background-color: #deebff; }
-  .header .notification-message {
+  .notification-message {
     font-size: 1.38em;
     font-weight: 500;
     line-height: 1.16;
     letter-spacing: 0.07px;
     color: #0052cc; }
-  .header .notification-close {
+  .notification-close {
     position: absolute;
     top: 50%;
     right: 3.4em;
@@ -359,11 +367,12 @@ a {
   -moz-justify-content: center;
   justify-content: center; }
   .section-app-feature-img {
+    margin-left: 4em;
     min-width: 0;
     width: 100%;
     max-width: 27.84em; }
   .section-app-feature-main {
-    margin-left: 6.8%; }
+    margin-left: 7.8%; }
     .section-app-feature-main-subtitle {
       margin-bottom: 0.8571428571em;
       font-size: 1.4em;
@@ -404,9 +413,12 @@ a {
     -moz-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
+    .section-app-feature.reversed .section-app-feature-img {
+      margin-left: 0;
+      margin-right: 4em; }
     .section-app-feature.reversed .section-app-feature-main {
       margin-left: 0;
-      margin-right: 6.8%; }
+      margin-right: 7.8%; }
 
 .section-banner {
   padding-top: 6em;
