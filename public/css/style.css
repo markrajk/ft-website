@@ -127,26 +127,7 @@ a {
       text-decoration: none;
       cursor: pointer; }
       .header .nav-brand-logo {
-        width: 4em;
-        height: 4em;
-        margin-right: .96em; }
-      .header .nav-brand-title {
-        margin-right: .2em;
-        font-size: 2.83em;
-        font-weight: 700;
-        letter-spacing: -0.99px;
-        color: #162140; }
-      .header .nav-brand-version {
-        margin-top: 0.1666666667em;
-        -webkit-align-self: flex-start;
-        -moz-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-        font-size: 1.2em;
-        font-weight: 600;
-        letter-spacing: 0.3px;
-        color: #23394d;
-        text-transform: uppercase; }
+        height: 3.94em; }
     .header .nav-buttons {
       display: -webkit-box;
       display: -webkit-flex;
