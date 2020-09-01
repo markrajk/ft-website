@@ -13,15 +13,24 @@
  <header class="header">
   <nav class="nav container">
    <a href="#" class="nav-brand">
-    <img src="./public/media/img/logo-large.png" alt="Team feedback logo" class="nav-brand-logo hide-md">
-    <img src="./public/media/img/logo-medium.png" alt="Team feedback logo" class="nav-brand-logo hide show-md-inline">
+    <img src="./public/media/img/logo-large.png" alt="Team feedback logo" class="nav-brand-logo large">
+    <img src="./public/media/img/logo-medium.png" alt="Team feedback logo" class="nav-brand-logo medium">
+    <img src="./public/media/img/logo-medium.png" alt="Team feedback logo" class="nav-brand-logo small">
    </a>
-   <div class="nav-buttons">
+   <div class="nav-buttons hide-sm">
     <a href="#" class="button-link hide-md">Fi</a>
     <a href="#" class="button button-primary-outlined hide-md">Sign in</a>
     <a href="#" class="button button-primary hide-md">Get started</a>
     <a href="#" class="button button-primary hide show-md-inline-flex">Sign in</a>
    </div>
+   <svg class="hide show-sm-inline-block" xmlns="http://www.w3.org/2000/svg" width="25.086" height="18.814"
+    viewBox="0 0 25.086 18.814">
+    <g transform="translate(-360 -25)">
+     <rect width="25.086" height="3.377" rx="1" transform="translate(360 25)" fill="#0c111f" />
+     <rect width="25.086" height="3.377" rx="1" transform="translate(360 32.719)" fill="#0c111f" />
+     <rect width="25.086" height="3.377" rx="1" transform="translate(360 40.438)" fill="#0c111f" />
+    </g>
+   </svg>
   </nav>
  </header>
 
@@ -48,10 +57,13 @@
      esimiesten ja yritysten kehittämiseen.
     </p>
     <div class="section-hero-main-buttons">
-     <a href="#" class="button button-primary">Testaa</a>
-     <a href="#" class="button button-primary-outlined">Opi lisää</a>
+     <a href="#" class="button button-primary hide-sm">Testaa</a>
+     <a href="#" class="button button-primary-outlined hide-sm">Opi lisää</a>
+     <a href="#" class="button button-primary hide show-sm-inline-flex">Download app to get started</a>
     </div>
-    <p class="section-hero-main-info">Team Feedback:in käyttö on maksutonta alle 100 työntekijän yrityksille.</p>
+    <p class="section-hero-main-info hide-sm">Team Feedback:in käyttö on maksutonta alle 100 työntekijän yrityksille.
+    </p>
+    <p class="section-hero-main-info show-sm-block">All basic features free of charge.</p>
    </div>
    <img src="./public/media/img/hero-01.png" alt="Team feedback features screenshot" class="section-hero-img">
   </section>
@@ -88,8 +100,8 @@
        d="M26.563,0H4.688A4.689,4.689,0,0,0,0,4.688V45.313A4.689,4.689,0,0,0,4.688,50H26.563a4.689,4.689,0,0,0,4.688-4.687V4.688A4.689,4.689,0,0,0,26.563,0ZM15.625,46.875A3.125,3.125,0,1,1,18.75,43.75,3.122,3.122,0,0,1,15.625,46.875ZM26.563,36.328A1.175,1.175,0,0,1,25.391,37.5H5.859a1.175,1.175,0,0,1-1.172-1.172V5.859A1.175,1.175,0,0,1,5.859,4.688H25.391a1.175,1.175,0,0,1,1.172,1.172Z"
        fill="#247dcb" />
      </svg>
-     <h3 class="section-cards-main-item-title">1. Mobiili appi</h3>
-     <p class="section-cards-main-item-text">
+     <h3 class="section-cards-main-item-title">1. Mobiili <br class="show-sm-block"> appi</h3>
+     <p class="section-cards-main-item-text hide-sm">
       Appi, joka tekee palautteen antaminen mahdollisimman
       helpoksi ja säännölliseksi. Työntekijöille uusi
       helppo tapa antaa ja saada palautetta.
@@ -104,8 +116,8 @@
       <path
        d="M58.824,48.618a5.875,5.875,0,0,0,5.853-5.882l.029-32.353A5.9,5.9,0,0,0,58.824,4.5H11.765a5.9,5.9,0,0,0-5.882,5.882V42.735a5.9,5.9,0,0,0,5.882,5.882H0A5.9,5.9,0,0,0,5.882,54.5H64.706a5.9,5.9,0,0,0,5.882-5.882ZM11.765,10.382H58.824V42.735H11.765ZM35.294,51.559a2.941,2.941,0,1,1,2.941-2.941A2.95,2.95,0,0,1,35.294,51.559Z"
        transform="translate(0 -4.5)" fill="#135289" /></svg>
-     <h3 class="section-cards-main-item-title">1. Mobiili appi</h3>
-     <p class="section-cards-main-item-text">
+     <h3 class="section-cards-main-item-title">1. Mobiili <br class="show-sm-block"> appi</h3>
+     <p class="section-cards-main-item-text hide-sm">
       Appi, joka tekee palautteen antaminen mahdollisimman
       helpoksi ja säännölliseksi. Työntekijöille uusi
       helppo tapa antaa ja saada palautetta.
@@ -209,14 +221,14 @@
   <section class="section section-banner">
    <div class="section-banner-main container">
     <p class="section-banner-main-subtitle">Yhteenveto</p>
-    <h2 class="section-banner-main-title">Työkalu josta voisi olla paljon hyötyä</h2>
-    <p class="section-banner-main-text">
+    <h2 class="section-banner-main-title">Työkalu josta voisi olla <br class="show-sm"> paljon hyötyä</h2>
+    <p class="section-banner-main-text spec">
      <span>Työntekijöille</span> - Uusi helppo tapa antaa ja saada palautetta.
     </p>
-    <p class="section-banner-main-text">
+    <p class="section-banner-main-text spec">
      <span>Esimiehille</span> - Erittäin tehokas työkalu tiimien ja alaisten kehittämiseen.
     </p>
-    <p class="section-banner-main-text">
+    <p class="section-banner-main-text spec">
      <span>Yrityksille</span> - Uusi palaute tietokanta työntekijöiden ja tiimien kehityksestä.
     </p>
    </div>

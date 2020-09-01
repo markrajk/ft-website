@@ -716,6 +716,31 @@ a {
 
    &-logo {
     height: 3.94em;
+
+    &.large {
+     @include respond(desktop-md) {
+      display: none;
+     }
+    }
+
+    &.medium {
+     display: none;
+     @include respond(desktop-md) {
+      display: inline;
+     }
+
+     @include respond(desktop-sm) {
+      display: none;
+     }
+    }
+
+    &.small {
+     height: 3.387em;
+     display: none;
+     @include respond(desktop-sm) {
+      display: inline;
+     }
+    }
    }
 
    // &-title {
@@ -775,6 +800,11 @@ a {
  position: relative;
  background-color: #deebff;
 
+ //MOBILE
+ @include respond(desktop-sm) {
+  display: none;
+ }
+
  &-message {
   font-size: 1.38em;
   font-weight: 500;
@@ -810,6 +840,12 @@ a {
   @include flex-direction(column-reverse);
  }
 
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 7.5em;
+  padding-bottom: 8.5em;
+ }
+
  &-main {
   // margin-right: 22em;
   max-width: 44em;
@@ -818,6 +854,12 @@ a {
   @include respond(desktop-md) {
    text-align: center;
   }
+
+  // //MOBILE
+  // @include respond(desktop-sm) {
+  //  max-width: 27.5em;
+  //  margin-bottom: 5em;
+  // }
 
   &-title {
    margin-bottom: emcalc(3,4.1);
@@ -832,6 +874,13 @@ a {
     font-size: 3.9em;
     line-height: 1.54;
     letter-spacing: -0.49px;
+   }
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 2.8em;
+    line-height: 1.43;
+    letter-spacing: normal;
    }
   }
 
@@ -849,10 +898,20 @@ a {
     margin-left: auto;
     margin-right: auto;
    }
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    display: none;
+   }
   }
 
   &-buttons {
    margin-bottom: 3.8em;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    margin-bottom: 2em;
+   }
 
    & .button {
     width: emcalc(13.5,1.45);
@@ -861,6 +920,15 @@ a {
     font-weight: 600;
     line-height: 1.17;
     letter-spacing: 0.18px;
+
+    //MOBILE
+    @include respond(desktop-sm) {
+     width: 100%;
+     max-width: emcalc(33,1.5);
+     font-size: 1.5em;
+     font-weight: 500;
+     letter-spacing: 0.26px;
+    }
 
     &:not(:last-of-type) {
      margin-right: emcalc(1.8,1.45);
@@ -894,6 +962,12 @@ a {
    margin-right: 0;
    margin-bottom: 6em;
   }
+
+  //MOBILE
+  @include respond(desktop-sm) {
+   max-width: 27.5em;
+   margin-bottom: 5em;
+  }
  }
 }
 
@@ -903,6 +977,12 @@ a {
  padding-bottom: 4.5em;
  background-color: #fbfbfb;
  border-top: 1px solid #E6E6E6;
+
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 5em;
+  padding-bottom: 5em;
+ }
 
  &-main {
   @include flexbox();
@@ -920,6 +1000,14 @@ a {
     font-weight: 700;
     letter-spacing: -0.27px;
     color: #1f243c;
+
+    //MOBILE
+    @include respond(desktop-sm) {
+     margin-bottom: emcalc(2,2.1);
+     font-size: 2.1em;
+     letter-spacing: normal;
+     color: #0e1321;
+    }
    }
 
    &-text {
@@ -935,10 +1023,25 @@ a {
      line-height: 1.73;
      letter-spacing: -0.08px;
     }
+
+    //MOBILE
+    @include respond(desktop-sm) {
+     font-size: 1.35em;
+     line-height: 1.7;
+     letter-spacing: -0.07px;
+     color: #3a3c43;
+    }
    }
 
    &.item-01 {
     margin-bottom: 5.5em;
+
+    //MOBILE
+    @include respond(desktop-sm) {
+     margin-bottom: 0;
+     padding-bottom: emcalc(3.3,1);
+     border-bottom: 1.5px solid #EDEDED;
+    }
    }
 
    &.item-02 {
@@ -947,6 +1050,11 @@ a {
     //TABLET
     @include respond(desktop-md) {
      max-width: 64em;
+    }
+
+    //MOBILE
+    @include respond(desktop-sm) {
+     padding-top: emcalc(3.3,1);
     }
    }
   }
@@ -959,6 +1067,12 @@ a {
  padding-bottom: 8.5em;
  background-color: #fbfbfb;
  border-bottom: 1px solid #E6E6E6;
+
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 0;
+  padding-bottom: 5em;
+ }
 
  &-main {
   @include flexbox();
@@ -975,6 +1089,12 @@ a {
    //TABLET
    @include respond(desktop-md) {
     margin: 0 4.5em;
+   }
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    height: 13.5em;
+    margin: 0 7em;
    }
   }
 
@@ -998,6 +1118,13 @@ a {
     line-height: 1.82;
     letter-spacing: -0.11px;
     color: #1f243c;
+
+    //MOBILE
+    @include respond(desktop-sm) {
+     font-size: 1.6em;
+     line-height: 1.25;
+     letter-spacing: -0.08px;
+    }
    }
 
    &-text {
@@ -1032,6 +1159,13 @@ a {
   text-align: center;
  }
 
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 4em;
+  padding-bottom: 6em;
+  text-align: left;
+ }
+
  &-img {
   margin-left: 4em;
   min-width: 0;
@@ -1042,6 +1176,11 @@ a {
   @include respond(desktop-md) {
    margin-left: 0em;
    margin-bottom: 3.4em;
+  }
+
+  //MOBILE
+  @include respond(desktop-sm) {
+   max-width: 25em;
   }
  }
 
@@ -1059,6 +1198,11 @@ a {
    font-weight: 600;
    letter-spacing: -0.07px;
    color: #1f243c;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    display: none;
+   }
   }
 
   &-title {
@@ -1068,6 +1212,14 @@ a {
    line-height: 1.33;
    letter-spacing: -0.15px;
    color: #1f243c;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 2em;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+   }
   }
 
   &-text {
@@ -1078,9 +1230,22 @@ a {
    line-height: 1.79;
    letter-spacing: -0.07px;
    color: #3f424e;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    margin-bottom: 0;
+    font-size: 1.35em;
+    line-height: 1.7;
+   }
   }
 
   &-list {
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    display: none;
+   }
+
    &-link {
     font-size: 1.4em;
     font-weight: 500;
@@ -1144,6 +1309,12 @@ a {
   padding-bottom: 5em;
  }
 
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 4em;
+  padding-bottom: 0;
+ }
+
  &-main {
   text-align: center;
 
@@ -1169,6 +1340,12 @@ a {
     line-height: 1.36;
     letter-spacing: normal;
    }
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 2.1em;
+    color: #0e1321;
+   }
   }
 
   &-text {
@@ -1187,8 +1364,38 @@ a {
     letter-spacing: normal;
    }
 
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 1.35em;
+    line-height: 1.7;
+    letter-spacing: -0.07px;
+    color: #3a3c43;
+   }
+
    & span {
     font-weight: 500;
+   }
+
+   &.spec {
+    //MOBILE
+    @include respond(desktop-sm) {
+     font-size: 1.45em;
+     line-height: 1.59;
+     letter-spacing: -0.07px;
+     color: #414150;
+
+     padding: emcalc(2.8,1.35) 0;
+     
+     &:not(:last-of-type) {
+      border-bottom: 1.5px solid #EDEDED;
+     }
+
+     & span {
+      font-weight: 600;
+      color: #0c0c0f;
+      display: block;
+     }
+    }
    }
   }
  }
@@ -1202,12 +1409,18 @@ a {
  @include align-items(center);
  @include justify-content(center);
 
-  //TABLET
-  @include respond(desktop-md) {
-   padding-top: 7.5em;
-   padding-bottom: 5em;
-   @include flex-direction(column);
-  }
+ //TABLET
+ @include respond(desktop-md) {
+  padding-top: 7.5em;
+  padding-bottom: 5em;
+  @include flex-direction(column);
+ }
+
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 6em;
+  padding-bottom: 5em;
+ }
 
  &-img {
   min-width: 0;
@@ -1218,6 +1431,12 @@ a {
   @include respond(desktop-md) {
    margin-bottom: 5em;
    max-width: 59.1em;
+  }
+
+  //MOBILE
+  @include respond(desktop-sm) {
+   margin-bottom: 3.5em;
+   max-width: 36em;
   }
  }
 
@@ -1239,15 +1458,30 @@ a {
    font-weight: 700;
    letter-spacing: -0.14px;
    color: #1f243c;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 2em;
+    letter-spacing: normal;
+    color: #000000;
+   }
   }
 
   &-text {
-   width: emcalc(51.4,1.38);
+   width: 100%;
+   max-width: emcalc(51.4,1.38);
    font-size: 1.38em;
    font-weight: 400;
    line-height: 1.82;
    letter-spacing: -0.07px;
    color: #3f424e;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 1.35em;
+    line-height: 1.7;
+    color: #4a4a4a;
+   }
   }
  }
 
@@ -1285,6 +1519,12 @@ a {
   padding-bottom: 5em;
  }
 
+ //MOBILE
+ @include respond(desktop-sm) {
+  padding-top: 5.7em;
+  padding-bottom: 5em;
+ }
+
  &-main {
   margin: 0 auto;
   max-width: 65.6em;
@@ -1295,11 +1535,22 @@ a {
    max-width: 52em;
   }
 
+  //MOBILE
+  @include respond(desktop-sm) {
+   max-width: 29.6em;
+  }
+
   &-subtitle {
    margin-bottom: emcalc(1.2,1.55);
    font-size: 1.55em;
    font-weight: 600;
    color: #121212;
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 1.5em;
+    color: #0e1321;
+   }
   }
 
   &-title {
@@ -1314,6 +1565,13 @@ a {
     font-size: 2.8em;
     line-height: 1.36;
     letter-spacing: normal;
+   }
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 2.4em;
+    line-height: 1.58;
+    color: #0e1321;
    }
   }
 
@@ -1330,6 +1588,14 @@ a {
     font-size: 1.5em;
     line-height: 1.8;
     letter-spacing: normal;
+   }
+
+   //MOBILE
+   @include respond(desktop-sm) {
+    font-size: 1.35em;
+    line-height: 1.7;
+    letter-spacing: -0.07px;
+    color: #4a4a4a;
    }
   }
 
@@ -1350,8 +1616,21 @@ a {
      letter-spacing: normal;
     }
 
+    //MOBILE
+    @include respond(desktop-sm) {
+     font-size: 1.4em;
+     font-weight: 500;
+     line-height: 1.21;
+    }
+
     &:not(:last-of-type) {
      margin-right: emcalc(1.8,1.45);
+
+     //MOBILE
+     @include respond(desktop-sm) {
+      margin-bottom: emcalc(2,1.4);
+      margin-right: 0;
+     }
     }
    }
   }
