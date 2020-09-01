@@ -260,7 +260,8 @@ a {
 .section-info {
   padding-top: 7em;
   padding-bottom: 4.5em;
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  border-top: 1px solid #E6E6E6; }
   .section-info-main {
     display: -webkit-box;
     display: -webkit-flex;
@@ -306,7 +307,8 @@ a {
 .section-cards {
   padding-top: 3.5em;
   padding-bottom: 8.5em;
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #E6E6E6; }
   .section-cards-main {
     display: -webkit-box;
     display: -webkit-flex;
