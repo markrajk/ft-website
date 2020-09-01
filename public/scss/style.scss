@@ -637,9 +637,17 @@ a {
 
 //Container
 .container {
- padding: 0 8rem;
+ padding: 0 8em;
  margin: 0 auto;
  max-width: 144rem;
+
+ @include respond(desktop-lg) {
+  padding: 0 4em;
+ }
+
+ @include respond(desktop-md) {
+  padding: 0 2.2em;
+ }
 }
 
 //Buttons
@@ -796,6 +804,11 @@ a {
  @include align-items(center);
  @include justify-content(space-between);
  border-bottom: 1px solid #E6E6E6;
+
+ //TABLET
+ @include respond(desktop-md) {
+  @include flex-direction(column-reverse);
+ }
 
  &-main {
   // margin-right: 22em;
@@ -972,7 +985,7 @@ a {
   }
 
   &-title {
-   margin-bottom: emcalc(3,3);
+   margin-bottom: emcalc(2.5,3);
    font-size: 3em;
    font-weight: 700;
    line-height: 1.33;
@@ -1038,7 +1051,7 @@ a {
   text-align: center;
 
   &-subtitle {
-   margin-bottom: emcalc(1.2,1.55);
+   margin-bottom: emcalc(0,1.55);
    font-size: 1.55em;
    font-weight: 600;
    line-height: 2.71;
@@ -1046,7 +1059,7 @@ a {
   }
 
   &-title {
-   margin-bottom: emcalc(2.5,3);
+   margin-bottom: emcalc(2.1,3);
    font-size: 3em;
    font-weight: 700;
    line-height: 1.33;
@@ -1081,10 +1094,11 @@ a {
  &-img {
   min-width: 0;
   width: 100%;
-  max-width: 59.1em;
+  max-width: 62em;
  }
 
  &-main {
+  margin-right: 4em;
   margin-left: 6.6%;
 
   &-title {
@@ -1109,7 +1123,7 @@ a {
   @include flex-direction(row-reverse);
 
   & .section-dash-feature-main {
-   margin-left: 0;
+   margin-left: 4em;
    margin-right: 6.6%;
   }
  }
@@ -1231,3 +1245,177 @@ a {
   }
  }
 }
+
+//HIDE CLASSES
+.hide {
+ display: none!important;
+}
+
+.hide-md {
+ @include respond(desktop-md) {
+  display: none!important;
+ }
+}
+
+.hide-sm {
+ @include respond(desktop-sm) {
+  display: none!important;
+ }
+}
+
+.hide-xsm {
+ @include respond(desktop-xsm) {
+  display: none!important;
+ }
+}
+
+.hide-xxsm {
+ @include respond(desktop-xxsm) {
+  display: none!important;
+ }
+}
+
+//SHOW CLASSES
+.show-inline {
+ display: inline!important;
+}
+
+.show-inline-block {
+ display: inline-block!important;
+}
+
+.show-block {
+ display:-block!important;
+}
+
+.show-flex {
+ display:-flex!important;
+}
+
+.show-inline-flex {
+ display:-inline-flex!important;
+}
+//md
+.show-md-inline {
+ @include respond(desktop-md) {
+  display: inline!important;
+ }
+}
+
+.show-md-inline-block {
+ @include respond(desktop-md) {
+  display: inline-block!important;
+ }
+}
+
+.show-md-block {
+ @include respond(desktop-md) {
+  display: block!important;
+ }
+}
+
+.show-md-flex {
+ @include respond(desktop-md) {
+  display: flex!important;
+ }
+}
+
+.show-md-inline-flex {
+ @include respond(desktop-md) {
+  display: inline-flex!important;
+ }
+}
+
+//sm
+.show-sm-inline {
+ @include respond(desktop-sm) {
+  display: inline!important;
+ }
+}
+
+.show-sm-inline-block {
+ @include respond(desktop-sm) {
+  display: inline-block!important;
+ }
+}
+
+.show-sm-block {
+ @include respond(desktop-sm) {
+  display: block!important;
+ }
+}
+
+.show-sm-flex {
+ @include respond(desktop-sm) {
+  display: flex!important;
+ }
+}
+
+.show-sm-inline-flex {
+ @include respond(desktop-sm) {
+  display: inline-flex!important;
+ }
+}
+
+//xsm
+.show-xsm-inline {
+ @include respond(desktop-xsm) {
+  display: inline!important;
+ }
+}
+
+.show-xsm-inline-block {
+ @include respond(desktop-xsm) {
+  display: inline-block!important;
+ }
+}
+
+.show-xsm-block {
+ @include respond(desktop-xsm) {
+  display: block!important;
+ }
+}
+
+.show-xsm-flex {
+ @include respond(desktop-xsm) {
+  display: flex!important;
+ }
+}
+
+.show-xsm-inline-flex {
+ @include respond(desktop-xsm) {
+  display: inline-flex!important;
+ }
+}
+
+//xxsm
+.show-xxsm-inline {
+ @include respond(desktop-xxsm) {
+  display: inline!important;
+ }
+}
+
+.show-xxsm-inline-block {
+ @include respond(desktop-xxsm) {
+  display: inline-block!important;
+ }
+}
+
+.show-xxsm-block {
+ @include respond(desktop-xxsm) {
+  display: block!important;
+ }
+}
+
+.show-xxsm-flex {
+ @include respond(desktop-xxsm) {
+  display: flex!important;
+ }
+}
+
+.show-xxsm-inline-flex {
+ @include respond(desktop-xxsm) {
+  display: inline-flex!important;
+ }
+}
+
