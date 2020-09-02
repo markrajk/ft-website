@@ -842,7 +842,7 @@ a {
 
  //MOBILE
  @include respond(desktop-sm) {
-  padding-top: 7.5em;
+  padding-top: 7.2em;
   padding-bottom: 8.5em;
  }
 
@@ -878,6 +878,7 @@ a {
 
    //MOBILE
    @include respond(desktop-sm) {
+    margin-bottom: emcalc(3,2.8);
     font-size: 2.8em;
     line-height: 1.43;
     letter-spacing: normal;
@@ -966,7 +967,7 @@ a {
   //MOBILE
   @include respond(desktop-sm) {
    max-width: 27.5em;
-   margin-bottom: 5em;
+   margin-bottom: 4.4em;
   }
  }
 }
@@ -994,6 +995,11 @@ a {
    max-width: 59.2em;
    text-align: center;
 
+   //MOBILE
+   @include respond(desktop-sm) {
+    max-width: 32em;
+   }
+
    &-title {
     margin-bottom: emcalc(1.6,2.7);
     font-size: 2.7em;
@@ -1003,7 +1009,7 @@ a {
 
     //MOBILE
     @include respond(desktop-sm) {
-     margin-bottom: emcalc(2,2.1);
+     margin-bottom: emcalc(1.8,2.1);
      font-size: 2.1em;
      letter-spacing: normal;
      color: #0e1321;
@@ -1045,6 +1051,7 @@ a {
    }
 
    &.item-02 {
+
     max-width: 61em;
 
     //TABLET
@@ -1054,7 +1061,8 @@ a {
 
     //MOBILE
     @include respond(desktop-sm) {
-     padding-top: emcalc(3.3,1);
+      padding-top: emcalc(3.3,1);
+      max-width: 32em;
     }
    }
   }
@@ -1109,6 +1117,11 @@ a {
 
    &-icon {
     margin-bottom: 3em;
+
+    //MOBILE
+    @include respond(desktop-sm) {
+      margin-bottom: 1.8em;
+    }
    }
 
    &-title {
@@ -1192,6 +1205,13 @@ a {
    margin-left: 0em;
   }
 
+  //MOBILE
+  @include respond(desktop-sm) {
+    width: 100%;
+    max-width: 100%;
+    margin-left: .3em;
+   }
+
   &-subtitle {
    margin-bottom: emcalc(1.2,1.4);
    font-size: 1.4em;
@@ -1215,6 +1235,7 @@ a {
 
    //MOBILE
    @include respond(desktop-sm) {
+    margin-bottom: emcalc(1.5,2);
     font-size: 2em;
     line-height: 1.5;
     letter-spacing: normal;
@@ -1233,6 +1254,7 @@ a {
 
    //MOBILE
    @include respond(desktop-sm) {
+    max-width: emcalc(33,1.35);
     margin-bottom: 0;
     font-size: 1.35em;
     line-height: 1.7;
@@ -1312,7 +1334,7 @@ a {
  //MOBILE
  @include respond(desktop-sm) {
   padding-top: 4em;
-  padding-bottom: 0;
+  padding-bottom: 5em;
  }
 
  &-main {
@@ -1398,6 +1420,14 @@ a {
     }
    }
   }
+ }
+
+ &.spec {
+   padding-bottom: 0;
+ }
+
+ & .spec:nth-of-type(2) {
+  border-top: 1.5px solid #EDEDED;
  }
 }
 
