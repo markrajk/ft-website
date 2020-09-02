@@ -245,7 +245,8 @@ a {
     min-width: 44em; }
     @media (max-width: 991px) {
       .section-hero-main {
-        text-align: center; } }
+        text-align: center;
+        min-width: 0; } }
     .section-hero-main-title {
       margin-bottom: 0.7317073171em;
       font-size: 4.1em;

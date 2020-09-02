@@ -855,6 +855,7 @@ a {
   //TABLET
   @include respond(desktop-md) {
    text-align: center;
+   min-width: 0;
   }
 
   // //MOBILE
