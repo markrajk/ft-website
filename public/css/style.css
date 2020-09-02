@@ -39,10 +39,10 @@ a {
   max-width: 144rem; }
   @media (max-width: 1199px) {
     .container {
-      padding: 0 4em; } }
+      padding: 0 4rem; } }
   @media (max-width: 991px) {
     .container {
-      padding: 0 2.2em; } }
+      padding: 0 2.2rem; } }
 
 .button {
   display: -webkit-inline-box;
@@ -70,6 +70,9 @@ a {
     background-color: #196ab1;
     border-color: #196ab1;
     color: #FFF; }
+    .button-primary:hover {
+      background-color: #2c7dc3;
+      border-color: #2c7dc3; }
     .button-primary-outlined {
       font-weight: 600;
       background-color: #FFF;
