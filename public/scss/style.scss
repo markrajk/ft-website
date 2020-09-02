@@ -957,6 +957,11 @@ a {
   width: 100%;
   max-width: 60.3em;
 
+  //LARGE
+  @include respond(desktop-lg) {
+    margin-right: 0;
+  }
+
   //TABLET
   @include respond(desktop-md) {
    max-width: 45em;
@@ -1641,6 +1646,15 @@ a {
 
   &-buttons {
 
+    
+    //MOBILE
+    @include respond(desktop-xsm) {
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column);
+      }
+
    & .button {
     padding: 0 emcalc(2.6,1.45);
     height: emcalc(4.8,1.45);
@@ -1658,6 +1672,10 @@ a {
 
     //MOBILE
     @include respond(desktop-sm) {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
      font-size: 1.4em;
      font-weight: 500;
      line-height: 1.21;
@@ -1667,7 +1685,8 @@ a {
      margin-right: emcalc(1.8,1.45);
 
      //MOBILE
-     @include respond(desktop-sm) {
+     @include respond(desktop-xsm) {
+       width: auto;
       margin-bottom: emcalc(2,1.4);
       margin-right: 0;
      }
