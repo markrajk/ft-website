@@ -358,7 +358,7 @@ a {
       text-align: center; }
       @media (max-width: 767px) {
         .section-info-main-item {
-          max-width: 32em; } }
+          max-width: 86.5%; } }
       .section-info-main-item-title {
         margin-bottom: 0.5925925926em;
         font-size: 2.7em;
@@ -403,7 +403,7 @@ a {
         @media (max-width: 767px) {
           .section-info-main-item.item-02 {
             padding-top: 3.3em;
-            max-width: 32em; } }
+            max-width: 86.5%; } }
 
 .section-cards {
   padding-top: 3.5em;
@@ -530,7 +530,7 @@ a {
     @media (max-width: 767px) {
       .section-app-feature-main {
         width: 100%;
-        max-width: 100%;
+        max-width: 89.2%;
         margin-left: .3em; } }
     .section-app-feature-main-subtitle {
       margin-bottom: 0.8571428571em;
@@ -565,7 +565,7 @@ a {
       color: #3f424e; }
       @media (max-width: 767px) {
         .section-app-feature-main-text {
-          max-width: 24.4444444444em;
+          max-width: 100%;
           margin-bottom: 0;
           font-size: 1.35em;
           line-height: 1.7; } }
@@ -623,8 +623,7 @@ a {
       padding-bottom: 5em; } }
   @media (max-width: 767px) {
     .section-banner {
-      padding-top: 4em;
-      padding-bottom: 5em; } }
+      padding-top: 4em; } }
   .section-banner-main {
     text-align: center; }
     .section-banner-main-subtitle {
@@ -683,10 +682,12 @@ a {
             font-weight: 600;
             color: #0c0c0f;
             display: block; } }
-  .section-banner.spec {
-    padding-bottom: 0; }
-  .section-banner .spec:nth-of-type(2) {
-    border-top: 1.5px solid #EDEDED; }
+  @media (max-width: 767px) {
+    .section-banner.spec {
+      padding-bottom: 0em; } }
+  @media (max-width: 767px) {
+    .section-banner .spec:nth-of-type(2) {
+      border-top: 1.5px solid #EDEDED; } }
 
 .section-dash-feature {
   padding-top: 9em;
@@ -730,8 +731,7 @@ a {
         max-width: 59.1em; } }
     @media (max-width: 767px) {
       .section-dash-feature-img {
-        margin-bottom: 3.5em;
-        max-width: 36em; } }
+        margin-bottom: 3.5em; } }
   .section-dash-feature-main {
     margin-right: 4em;
     margin-left: 6.6%; }
@@ -810,7 +810,7 @@ a {
         max-width: 52em; } }
     @media (max-width: 767px) {
       .section-redirect-main {
-        max-width: 32em; } }
+        max-width: 80%; } }
     .section-redirect-main-subtitle {
       margin-bottom: 0.7741935484em;
       font-size: 1.55em;

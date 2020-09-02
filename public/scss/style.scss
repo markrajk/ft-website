@@ -997,7 +997,7 @@ a {
 
    //MOBILE
    @include respond(desktop-sm) {
-    max-width: 32em;
+    max-width: 86.5%;
    }
 
    &-title {
@@ -1062,7 +1062,7 @@ a {
     //MOBILE
     @include respond(desktop-sm) {
       padding-top: emcalc(3.3,1);
-      max-width: 32em;
+      max-width: 86.5%;
     }
    }
   }
@@ -1207,8 +1207,10 @@ a {
 
   //MOBILE
   @include respond(desktop-sm) {
+    // width: 100%;
+    // max-width: 100%;
     width: 100%;
-    max-width: 100%;
+    max-width: 89.2%;
     margin-left: .3em;
    }
 
@@ -1254,7 +1256,9 @@ a {
 
    //MOBILE
    @include respond(desktop-sm) {
-    max-width: emcalc(33,1.35);
+    // max-width: emcalc(33,1.35);
+    max-width: 100%;
+    // max-width: 89.2%;
     margin-bottom: 0;
     font-size: 1.35em;
     line-height: 1.7;
@@ -1334,7 +1338,7 @@ a {
  //MOBILE
  @include respond(desktop-sm) {
   padding-top: 4em;
-  padding-bottom: 5em;
+
  }
 
  &-main {
@@ -1423,11 +1427,17 @@ a {
  }
 
  &.spec {
-   padding-bottom: 0;
+   //MOBILE
+  @include respond(desktop-sm) {
+    padding-bottom: 0em;
+  }
  }
 
  & .spec:nth-of-type(2) {
-  border-top: 1.5px solid #EDEDED;
+   //MOBILE
+  @include respond(desktop-sm) {
+    border-top: 1.5px solid #EDEDED;
+  }
  }
 }
 
@@ -1466,7 +1476,7 @@ a {
   //MOBILE
   @include respond(desktop-sm) {
    margin-bottom: 3.5em;
-   max-width: 36em;
+   //max-width: 36em;
   }
  }
 
@@ -1567,7 +1577,7 @@ a {
 
   //MOBILE
   @include respond(desktop-sm) {
-   max-width: 32em;
+   max-width: 80%;
   }
 
   &-subtitle {
