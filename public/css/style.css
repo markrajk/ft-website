@@ -600,6 +600,11 @@ a {
           margin-bottom: 0;
           font-size: 1.35em;
           line-height: 1.7; } }
+      .section-app-feature-main-text .play-video {
+        font-weight: 500;
+        color: #0b53b4; }
+        .section-app-feature-main-text .play-video.active {
+          font-weight: 600; }
     @media (max-width: 767px) {
       .section-app-feature-main-list {
         display: none; } }
