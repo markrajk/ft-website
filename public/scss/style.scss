@@ -848,7 +848,9 @@ a {
 
  &-main {
   // margin-right: 22em;
+  margin-right: 2em;
   max-width: 44em;
+  min-width: 44em;
 
   //TABLET
   @include respond(desktop-md) {
@@ -958,7 +960,7 @@ a {
   max-width: 60.3em;
 
   //LARGE
-  @include respond(desktop-lg) {
+  @include custom-respond(1250) {
     margin-right: 0;
   }
 

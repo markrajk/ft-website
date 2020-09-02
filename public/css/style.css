@@ -240,7 +240,9 @@ a {
       padding-top: 7.2em;
       padding-bottom: 8.5em; } }
   .section-hero-main {
-    max-width: 44em; }
+    margin-right: 2em;
+    max-width: 44em;
+    min-width: 44em; }
     @media (max-width: 991px) {
       .section-hero-main {
         text-align: center; } }
@@ -312,7 +314,7 @@ a {
     min-width: 0;
     width: 100%;
     max-width: 60.3em; }
-    @media (max-width: 1199px) {
+    @media (max-width: 1250px) {
       .section-hero-img {
         margin-right: 0; } }
     @media (max-width: 991px) {
