@@ -9,6 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  padding-top: 7em;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   box-sizing: border-box;
@@ -88,9 +89,10 @@ a {
   border-bottom: 1px solid #E6E6E6; }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   background-color: #FFF;
   z-index: 1000;
   border-bottom: 1.5px solid #F1F1F1; }
@@ -526,6 +528,7 @@ a {
       max-width: 30em; }
       @media (max-width: 991px) {
         .section-app-feature-media-img {
+          margin-left: 0;
           max-width: 32.5em; } }
       @media (max-width: 575px) {
         .section-app-feature-media-img {
@@ -620,11 +623,11 @@ a {
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column; } }
-    .section-app-feature.reversed .section-app-feature-img {
+    .section-app-feature.reversed .section-app-feature-media {
       margin-left: 0;
       margin-right: 4em; }
       @media (max-width: 991px) {
-        .section-app-feature.reversed .section-app-feature-img {
+        .section-app-feature.reversed .section-app-feature-media {
           margin-right: 0; } }
     .section-app-feature.reversed .section-app-feature-main {
       margin-left: 0;
@@ -742,17 +745,20 @@ a {
     .section-dash-feature {
       padding-top: 6em;
       padding-bottom: 5em; } }
-  .section-dash-feature-img {
+  .section-dash-feature-img, .section-dash-feature-video {
     min-width: 0;
     width: 100%;
     max-width: 62em; }
     @media (max-width: 991px) {
-      .section-dash-feature-img {
+      .section-dash-feature-img, .section-dash-feature-video {
         margin-bottom: 5em;
         max-width: 59.1em; } }
     @media (max-width: 767px) {
-      .section-dash-feature-img {
+      .section-dash-feature-img, .section-dash-feature-video {
         margin-bottom: 3.5em; } }
+  .section-dash-feature-video {
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1); }
   .section-dash-feature-main {
     margin-right: 4em;
     margin-left: 6.6%; }
