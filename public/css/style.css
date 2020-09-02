@@ -34,7 +34,7 @@ a {
   color: inherit; }
 
 .container {
-  padding: 0 8em;
+  padding: 0 8rem;
   margin: 0 auto;
   max-width: 144rem; }
   @media (max-width: 1199px) {
