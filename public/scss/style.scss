@@ -642,11 +642,10 @@ a {
    min-width: 0;
   }
 
-  // //MOBILE
-  // @include respond(desktop-sm) {
-  //  max-width: 27.5em;
-  //  margin-bottom: 5em;
-  // }
+  //MOBILE
+  @include respond(desktop-sm) {
+   margin-right: 0;
+  }
 
   &-title {
    margin-bottom: emcalc(3,4.1);

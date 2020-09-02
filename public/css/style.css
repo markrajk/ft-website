@@ -252,6 +252,9 @@ a {
       .section-hero-main {
         text-align: center;
         min-width: 0; } }
+    @media (max-width: 767px) {
+      .section-hero-main {
+        margin-right: 0; } }
     .section-hero-main-title {
       margin-bottom: 0.7317073171em;
       font-size: 4.1em;
