@@ -142,7 +142,27 @@
 
     <!-- APP FEATURE SECTION -->
     <section class="section section-app-feature container card-01">
-      <img src="./public/media/img/app-feature-01.png" alt="Team feedback feature" class="section-app-feature-img">
+      <!-- <img src="./public/media/img/app-feature-01.png" alt="Team feedback feature" class="section-app-feature-img"> -->
+      <div class="section-app-feature-media">
+        <video class="card-01-01 section-app-feature-media-video active" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-01-01.m4v" type="video/mp4">
+        </video>
+
+        <video class="card-01-02 section-app-feature-media-video" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-01-02.m4v" type="video/mp4">
+        </video>
+
+        <video class="card-01-03 section-app-feature-media-video" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-01-03.m4v" type="video/mp4">
+        </video>
+
+        <video class="card-01-04 section-app-feature-media-video" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-01-04.m4v" type="video/mp4">
+        </video>
+
+        <img src="./public/media/img/phone-placeholder.jpeg" alt="Team Feedback app feature"
+          class="section-app-feature-media-img">
+      </div>
       <div class="section-app-feature-main">
         <p class="section-app-feature-main-subtitle">Osa 1 - Mobiili Appi</p>
         <h2 class="section-app-feature-main-title">Uusi helppo tapa antaa palautetta</h2>
@@ -161,10 +181,10 @@
           Helppoa, nopeaa ja hauskaa.
         </p>
         <div class="section-app-feature-main-list">
-          <a href="#" class="section-app-feature-main-list-link active">Vertaispalaute</a>
-          <a href="#" class="section-app-feature-main-list-link">Tiimipalaute</a>
-          <a href="#" class="section-app-feature-main-list-link">Esimies palaute</a>
-          <a href="#" class="section-app-feature-main-list-link">Itsearviointi</a>
+          <a href="#" class="section-app-feature-main-list-link play-video active" goTo="card-01-01">Vertaispalaute</a>
+          <a href="#" class="section-app-feature-main-list-link play-video" goTo="card-01-02">Tiimipalaute</a>
+          <a href="#" class="section-app-feature-main-list-link play-video" goTo="card-01-03">Esimies palaute</a>
+          <a href="#" class="section-app-feature-main-list-link play-video" goTo="card-01-04">Itsearviointi</a>
         </div>
       </div>
     </section>
@@ -175,7 +195,23 @@
 
     <!-- APP FEATURE SECTION -->
     <section class="section section-app-feature container reversed card-02">
-      <img src="./public/media/img/app-feature-01.png" alt="Team feedback feature" class="section-app-feature-img">
+      <!-- <img src="./public/media/img/app-feature-01.png" alt="Team feedback feature" class="section-app-feature-img"> -->
+      <div class="section-app-feature-media">
+        <video class="card-02-01 section-app-feature-media-video" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-02-01.m4v" type="video/mp4">
+        </video>
+
+        <video class="card-02-02 section-app-feature-media-video" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-02-02.m4v" type="video/mp4">
+        </video>
+
+        <video class="card-02-03 section-app-feature-media-video active" muted preload="auto" autoplay>
+          <source src="./public/media/video/card-02-03.m4v" type="video/mp4">
+        </video>
+
+        <img src="./public/media/img/phone-placeholder.jpeg" alt="Team Feedback app feature"
+          class="section-app-feature-media-img">
+      </div>
       <div class="section-app-feature-main">
         <h2 class="section-app-feature-main-title">Uusi helppo tapa saada palautetta</h2>
         <p class="section-app-feature-main-text hide-sm">
@@ -192,8 +228,10 @@
           ilahduttavat ja rakentava palaute kehittää.
         </p>
         <div class="section-app-feature-main-list">
-          <a href="#" class="section-app-feature-main-list-link active">Kehityksen seuraaminen</a>
-          <a href="#" class="section-app-feature-main-list-link">Kehut ja parannus ideat</a>
+          <a href="#" class="section-app-feature-main-list-link active play-video" goTo="card-02-02">Kehityksen
+            seuraaminen</a>
+          <a href="#" class="section-app-feature-main-list-link play-video" goTo="card-02-03">Kehut ja parannus
+            ideat</a>
         </div>
       </div>
     </section>
@@ -306,6 +344,43 @@
   </footer>
 
   <script src="./public/js/main.js"></script>
+
+  <script>
+    var featureCardLinks = document.querySelectorAll(
+      '.play-video'
+    );
+
+    for (var i = 0; i < featureCardLinks.length; i++) {
+      featureCardLinks[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        var goTo = e.target.getAttribute('goTo');
+        var card = goTo.substring(0, goTo.length - 3);
+        var video = document.querySelector(`.${card} video.${goTo}`);
+        // var text = document.querySelector(`.${card} .section-feature-card-main-text .${goTo}`);
+        console.log('goto', goTo)
+        console.log('card', card)
+        console.log('video', video)
+
+        document.querySelectorAll(`.${card} .section-app-feature-media-video`).forEach(e => e.classList.remove(
+          'active'));
+
+        // document.querySelectorAll(`.${card} .section-feature-card-main-text span`).forEach(e => e.classList.remove(
+        //   'active'));
+
+        document.querySelectorAll(`.${card} .play-video`).forEach(e => e.classList.remove(
+          'active'));
+
+        // text.classList.add('active');
+
+        e.target.classList.add('active');
+
+        video.classList.add('active');
+        video.currentTime = 0;
+        video.play();
+
+      });
+    }
+  </script>
 </body>
 
 </html>
