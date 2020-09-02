@@ -756,7 +756,7 @@ a {
     @media (max-width: 991px) {
       .section-dash-feature-img, .section-dash-feature-video {
         margin-bottom: 5em;
-        max-width: 59.1em; } }
+        max-width: 60em; } }
     @media (max-width: 767px) {
       .section-dash-feature-img, .section-dash-feature-video {
         margin-bottom: 3.5em; } }
@@ -772,7 +772,7 @@ a {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
-        max-width: 55.4em; } }
+        max-width: 60em; } }
     .section-dash-feature-main-title {
       margin-bottom: 0.8928571429em;
       font-size: 2.8em;
@@ -820,7 +820,7 @@ a {
           margin-left: 0;
           margin-right: 0;
           width: 100%;
-          max-width: 55.4em; } }
+          max-width: 60em; } }
 
 .section-redirect {
   padding-top: 11em;
@@ -886,7 +886,7 @@ a {
           line-height: 1.7;
           letter-spacing: -0.07px;
           color: #4a4a4a; } }
-    @media (max-width: 575px) {
+    @media (max-width: 620px) {
       .section-redirect-main-buttons {
         display: -webkit-box;
         display: -webkit-flex;
@@ -921,37 +921,16 @@ a {
           font-size: 1.5em;
           line-height: 1.8;
           letter-spacing: normal; } }
-      @media (max-width: 767px) {
+      @media (max-width: 620px) {
         .section-redirect-main-buttons .button {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          justify-content: center;
-          -webkit-box-direction: normal;
-          -webkit-box-orient: vertical;
-          -webkit-flex-direction: column;
-          -moz-flex-direction: column;
-          -ms-flex-direction: column;
-          flex-direction: column;
+          margin-right: 0;
           font-size: 1.4em;
           font-weight: 500;
           line-height: 1.21; } }
       .section-redirect-main-buttons .button:not(:last-of-type) {
         margin-right: 1.2413793103em; }
-        @media (max-width: 575px) {
+        @media (max-width: 620px) {
           .section-redirect-main-buttons .button:not(:last-of-type) {
-            width: auto;
             margin-bottom: 1.4285714286em;
             margin-right: 0; } }
 
