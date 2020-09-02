@@ -1536,13 +1536,13 @@ a {
 
 //FOOTER
 .footer {
-
+  background-color: #f5f5f5;
  &-info {
   @include flexbox();
   @include align-items(center);
   @include justify-content(space-between);
   height: 6em;
-  background-color: #f5f5f5;
+
 
   //TABLET
   @include respond(desktop-md) {
